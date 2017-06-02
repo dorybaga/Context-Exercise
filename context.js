@@ -17,18 +17,21 @@ var wall_e = new Robot("Wall-E");
 
 
 // #1
+
 add(0, 1);
-console.log(add(0,1));
+console.log(add(0,1)); // Humans can count to 1
 
 // #2
 
 add.call(voltron, 2, 3);
-console.log(add.call(voltron, 2, 3));
+console.log(add.call(voltron, 2, 3)); // Voltron can count to 5
 
 // #3
+
 add.apply(optimus, [20, 30]);
-console.log(add.apply(optimus, [20, 30]));
+console.log(add.apply(optimus, [20, 30])); // Optimus Prime can count to 50
 
 // #4
 
-console.log(  );
+var calculate = add.bind(bender);
+console.log(calculate("drinking", "beer")); // Bender Rodriguez can count to drinkingbeer???
